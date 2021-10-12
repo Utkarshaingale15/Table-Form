@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table And Form</title>
+    <style>
+        .table tr td
+        {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        div{
+            text-align: center;
+            background-color:lightgreen;
+            width: 500px;
+            align-items: center;
+        }
+        #tab{
+                width: 100%;
+                font-size: 20px;
+                height: 50px;
+                text-align: center;
+                background-color:lightpink;
+                font-family:'Times New Roman', Times, serif;
+            }
+            #rf
+            {
+                height: 70px;
+                width: 100%;
+                padding-top: 8px;
+            }
+            #t1
+            {
+                background-color:cyan;
+                width: 100%;
+               height: 50px;
+               text-align: left;
+            }
+            #t2
+            {
+                background-color:cyan;
+                width: 100%;
+                text-align: right; 
+                height: 50px; 
+            }
+            #add
+            {
+                text-align: left;
+            }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+        <table id="tab">
+
+            <div id="rf">
+            <h2>Registration form</h2>
+            </div>
+
+            <div>
+                <tr>
+                    <td id="t1"><h4>&nbsp;&nbsp;&nbsp;Personal Details :-</h4></td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                    Name :-
+                    <input type="text" id="name" placeholder="Enter your name" name="name">
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                    E-mail :-
+                    <input type="email" id="email" placeholder="Enter your email" name="email">
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                    Contact :-
+                    <input type="number" id="no" placeholder="Enter your mobile no" name="no" maxlength="10">
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                        Gender :-
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td id="add">
+                        &nbsp;&nbsp;&nbsp;Address :-
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                        <textarea cols="40" rows="3" id="address">
+                        </textarea>
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                        Hobbies :-
+                        <input type="checkbox" name="hobby" value="dance">Dancing
+                        <input type="checkbox" name="hobby" value="sing">Singing
+                        <input type="checkbox" name="hobby" value="surf">Net Surfing
+                        <input type="checkbox" name="hobby" value="read">Reading
+                        <input type="checkbox" name="hobby" value="drive">Driving
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td id="t1"><h4>&nbsp;&nbsp;&nbsp;Educational Details :-</h4></td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                        Degree :-
+                        <select name="course">
+                        <option></option>
+                        <option value="be">B.E</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="me">M.E</option>
+                        <option value="mtech">M.Tech</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                        Engineering :-
+                        <select name="engg">
+                        <option></option>
+                        <option value="computer">Computer</option>
+                        <option value="civil">Civil</option>
+                        <option value="mech">Mechanical</option>
+                        <option value="et">E&Tc</option>
+                        <option value="chem">Chemical</option>
+                        <option value="pchem">Petrochemical</option>
+                        <option value="aero">Aeronautical</option>
+                        <option value="electrical">Electrical</option>
+                        <option value="automob">Automobile</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td>
+                        Attach Resume :-
+                        <input type="file" name="file">
+                    </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td id="t2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Cancel">&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+            </div>
+   
+
+        </table>
+    </div>
+    </form>
+</body>
+</html>
